@@ -14,3 +14,45 @@
  *= require_self
  */
 
+body {
+  text-align: center;
+
+}
+
+table {
+
+/*  border: 2px solid #B7C8CC;*/
+  border-radius: 25px;
+
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  text-align: center;
+}
+
+th {
+  background: lightgray;
+  font-size: 15px;
+}
+td {
+/*  border: 2px solid #B7C8CC;*/
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+tr:nth-child(even) {
+  background: lightgray;
+}
+/*
+tr:nth-child(odd) {
+  background: #FFF;
+}*/
+
+.navbar-brand {
+  float: left;
+}
