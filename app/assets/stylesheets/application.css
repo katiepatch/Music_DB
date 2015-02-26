@@ -35,7 +35,7 @@ th, td {
 }
 
 th {
-  background: lightgray;
+  background: #E7E9EB;
   font-size: 15px;
 }
 td {
@@ -46,7 +46,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background: lightgray;
+  background: #E7E9EB;
 }
 /*
 tr:nth-child(odd) {
