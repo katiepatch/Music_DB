@@ -7,12 +7,12 @@
 
 <p>
   <strong>Song:</strong>
-  <%= @playlist.song %>
+  <%= @playlist.song.name %>
 </p>
 
 <p>
   <strong>Artist:</strong>
-  <%= @playlist.artist %>
+  <%= @playlist.artist.name %>
 </p>
 
 <%= link_to 'Edit', edit_playlist_path(@playlist) %> |

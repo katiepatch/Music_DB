@@ -21,12 +21,14 @@ class PlaylistsController < ApplicationController
 
   # GET /playlists/1/edit
   def edit
+    @songs = Song.all
   end
 
   # POST /playlists
   # POST /playlists.json
   def create
     @playlist = Playlist.new(playlist_params)
+    @playlist.artist = @playlist.song.artist
 
     respond_to do |format|
       if @playlist.save
@@ -71,6 +73,6 @@ class PlaylistsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def playlist_params
-      params.require(:playlist).permit(:name, :song_id, :artist_id)
+      params.require(:playlist).permit(:name, :song_id)
     end
 end

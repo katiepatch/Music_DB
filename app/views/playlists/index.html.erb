@@ -2,7 +2,7 @@
 
 <h1>Listing Playlists</h1>
 
-<table>
+<table class="center">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,8 +16,8 @@
     <% @playlists.each do |playlist| %>
       <tr>
         <td><%= playlist.name %></td>
-        <td><%= playlist.song %></td>
-        <td><%= playlist.artist %></td>
+        <td><%= playlist.song.name %></td>
+        <td><%= playlist.artist.name %></td>
         <td><%= link_to 'Show', playlist %></td>
         <td><%= link_to 'Edit', edit_playlist_path(playlist) %></td>
         <td><%= link_to 'Destroy', playlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
